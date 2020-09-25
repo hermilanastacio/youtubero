@@ -1,0 +1,10 @@
+.libraryContainer {
+  overflow-y: scroll;
+  flex: 1;
+
+  & .playlistWrapper {
+    flex-direction: column;
+    padding: 15px;
+    display: flex;
+  }
+}

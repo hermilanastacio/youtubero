@@ -1,0 +1,44 @@
+@import '../../assets/variables.scss';
+
+.exploreContainer {
+  background-color: $color--white;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+
+  & .iconSection {
+    border-bottom: 1px solid $color--secondary-border; 
+    display: flex;
+
+    & .categoryIcon {
+      background-color: $color--secondary-text;
+      border-radius: 50%;
+      color: white;
+      padding: 10px;
+    }
+  }
+
+  & .scrollableSection {
+    position: relative;
+    flex: 1;
+
+    & .verticalScrollableListWrapper {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
+  & .iconWrapper {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+  }
+
+  & .active {
+    filter: opacity(0.5);
+  }
+}

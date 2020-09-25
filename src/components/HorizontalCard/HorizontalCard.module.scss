@@ -1,0 +1,42 @@
+@import '../../assets/variables.scss';
+
+.cardContainer {
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  
+  & .thumbnailWrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  & .durationWrapper {
+    background-color: $color--black;
+    color: $color--white; 
+    position: absolute;
+    padding: 0px 5px;
+    margin: 3px;
+  }
+
+  & .cursorPointer {
+    cursor: pointer;
+  }
+
+  & .imgThumbnail {
+    height: 90px;
+    width: 120px;
+  }
+
+  & .titleText {
+    @include truncate;
+    width: 120px;
+  }
+
+  & .secondaryText {
+    @include truncate;
+    width: 120px;
+    color: $color--secondary-text; 
+  }
+}

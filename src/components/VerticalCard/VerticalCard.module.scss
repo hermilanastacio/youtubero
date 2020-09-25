@@ -1,0 +1,45 @@
+@import '../../assets/variables.scss';
+
+.verticalCardWrapper {
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+  margin: 10px 0;
+  display: flex;
+
+  & .thumbnailWrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  & .durationWrapper {
+    background-color: $color--black;
+    color: $color--white; 
+    position: absolute;
+    padding: 0px 5px;
+    margin: 3px;
+  }
+
+  & .imgThumbnail {
+    height: 90px;
+    width: 120px;
+  }
+
+  & .cardDetailsWrapper {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+  }
+
+  & .contextWrapper {
+    margin-right: -15px;
+  }
+}
+
+.truncateText {
+  @include truncate;
+}

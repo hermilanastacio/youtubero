@@ -1,0 +1,62 @@
+@import '../../../assets/variables.scss';
+
+.maximizedDetailsContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  & .detailsWrapper {
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+
+  & .videoDetailsWrapper {
+    padding: 10px 15px;
+  }
+
+  & .uploaderDetailsWrapper {
+    border-top: 1px solid $color--secondary-border;
+    border-bottom: 1px solid $color--secondary-border; 
+    padding: 5px 15px;
+    display: flex;
+
+    & .channelDetailsWrapper {
+      margin-left: 10px;
+    }
+  }
+
+  .videoTabWrapper {
+    display: flex;
+    position: relative;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.07);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.07);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.07);
+
+    & .tabTextFormat {
+      text-align: center;
+      cursor: pointer;
+      padding: 10px 0;
+      margin: 0 10px;
+      width: 50%;
+    }
+  }
+
+  .activeVideosTab {
+    color: $color--youtube-red;
+    border-bottom: 2px solid $color--youtube-red;
+  }
+
+  .verticalScrollableListWrapper {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    cursor: pointer;
+    flex: 1;
+  }
+
+  & .truncateText {
+    @include truncate;
+  }
+}

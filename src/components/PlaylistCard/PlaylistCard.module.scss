@@ -1,0 +1,10 @@
+.playlistCardWrapper {
+  display: flex;
+  padding: 10px 0;
+  cursor: pointer;
+
+  & .playlistThumbnail {
+    width: 120px;
+    height: 80px;
+  }
+}

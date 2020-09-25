@@ -1,0 +1,30 @@
+@import '../../assets/variables.scss';
+
+.cardContainer {
+  border-bottom: 1px solid $color--secondary-border;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+
+  & .channelLogo {
+    height: 60px;
+    width: 60px;
+  }
+
+  & .channelDetailsWrapper {
+    position: relative;
+    @include truncate;
+    padding: 0 16px;
+    flex: 1;
+  }
+
+  & .truncateText {
+    @include truncate;
+  }
+
+  & .subscribedIndicator {
+    background-color: $color--light-gray;
+    border-radius: 3px;
+    padding: 7px;
+  }
+}

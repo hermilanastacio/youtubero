@@ -1,0 +1,23 @@
+@mixin toastrWrapper {
+  padding: 15px 15px 15px 15px;
+  bottom: 61px;
+  margin: 5px 0 0 5px;
+  position: absolute;
+  border-radius: 3px;
+  z-index: 2000;
+  color: #fff;
+}
+
+.reduceBottom {
+  bottom: 5px !important;
+}
+
+.success {
+  @include toastrWrapper;
+  background-color: #333;
+}
+
+.warning {
+  @include toastrWrapper;
+  background-color: #f00;
+}

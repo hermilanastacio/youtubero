@@ -1,0 +1,42 @@
+@import '../../assets/variables.scss';
+
+.topLoginWrapper {
+  height: 20px;
+  background-color: $color--youtube-red;
+
+  .loginText {
+    color: $color--white;
+    float: right;
+    margin-right: 10px;
+  }
+}
+
+.searchForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .closeIconWrapper {
+    background-color: $color--dirty-white;
+    position: absolute;
+    right: 27px;
+  }
+}
+
+.searchBtnWrapper {
+  position: absolute !important;
+  right: 40px;
+
+  & .searchIcon {
+    font-size: 25px;
+  }
+}
+
+.uploadBtnWrapper {
+  position: absolute !important;;
+  right: 0;
+
+  & .uploadIcon {
+    font-size: 25px;
+  }
+}

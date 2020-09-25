@@ -1,0 +1,11 @@
+@import '../../../assets/variables.scss';
+
+.badgeWrapper {
+  background-color: $color--youtube-red;
+  color: $color--white;
+  position: absolute;
+  border-radius: 50%;
+  padding: 1px 5px;
+  font-size: 10px;
+  top: 1;
+}
