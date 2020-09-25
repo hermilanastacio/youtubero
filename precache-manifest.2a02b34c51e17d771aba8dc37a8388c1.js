@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c47d34c779b03ee22bc22e239e31f8dd",
+    "revision": "a5bdbfc39d7f6437cd33ff2e32cbda48",
     "url": "/youtubero/index.html"
   },
   {
