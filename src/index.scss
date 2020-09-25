@@ -9,17 +9,17 @@ html, body {
 }
 
 //####HIGH LEVEL COMPONENT SIMULATOR
-#root {
-  width: 375px;
-  height: 450px;
-  overflow: hidden;
-}
-
 // #root {
-//   width: 100%;
-//   height: 100%;
+//   width: 375px;
+//   height: 450px;
 //   overflow: hidden;
 // }
+
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
 .App {
   display: flex;
