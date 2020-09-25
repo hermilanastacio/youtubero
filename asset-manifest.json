@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/youtubero/static/css/main.2760bed1.chunk.css",
-    "main.js": "/youtubero/static/js/main.b285b204.chunk.js",
-    "main.js.map": "/youtubero/static/js/main.b285b204.chunk.js.map",
+    "main.js": "/youtubero/static/js/main.287d4de6.chunk.js",
+    "main.js.map": "/youtubero/static/js/main.287d4de6.chunk.js.map",
     "runtime-main.js": "/youtubero/static/js/runtime-main.8052a3a7.js",
     "runtime-main.js.map": "/youtubero/static/js/runtime-main.8052a3a7.js.map",
-    "static/js/2.1ced6101.chunk.js": "/youtubero/static/js/2.1ced6101.chunk.js",
-    "static/js/2.1ced6101.chunk.js.map": "/youtubero/static/js/2.1ced6101.chunk.js.map",
+    "static/js/2.096942d6.chunk.js": "/youtubero/static/js/2.096942d6.chunk.js",
+    "static/js/2.096942d6.chunk.js.map": "/youtubero/static/js/2.096942d6.chunk.js.map",
     "index.html": "/youtubero/index.html",
-    "precache-manifest.2a02b34c51e17d771aba8dc37a8388c1.js": "/youtubero/precache-manifest.2a02b34c51e17d771aba8dc37a8388c1.js",
+    "precache-manifest.d969c8ff6b45f11f5348b5892c9ddbda.js": "/youtubero/precache-manifest.d969c8ff6b45f11f5348b5892c9ddbda.js",
     "service-worker.js": "/youtubero/service-worker.js",
     "static/css/main.2760bed1.chunk.css.map": "/youtubero/static/css/main.2760bed1.chunk.css.map",
-    "static/js/2.1ced6101.chunk.js.LICENSE.txt": "/youtubero/static/js/2.1ced6101.chunk.js.LICENSE.txt",
+    "static/js/2.096942d6.chunk.js.LICENSE.txt": "/youtubero/static/js/2.096942d6.chunk.js.LICENSE.txt",
     "static/media/logo.8b26dfb2.svg": "/youtubero/static/media/logo.8b26dfb2.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8052a3a7.js",
-    "static/js/2.1ced6101.chunk.js",
+    "static/js/2.096942d6.chunk.js",
     "static/css/main.2760bed1.chunk.css",
-    "static/js/main.b285b204.chunk.js"
+    "static/js/main.287d4de6.chunk.js"
   ]
 }
