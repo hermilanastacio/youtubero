@@ -16,9 +16,9 @@ const Home: React.FC = () => {
   const { videoStore, modalStore } = useStore();
 
   useEffect(() => {
-    // videoStore.getTrendingVideos();
-    // videoStore.getBreakingNews();
-    // videoStore.getSuggestedVideos();
+    videoStore.getTrendingVideos();
+    videoStore.getBreakingNews();
+    videoStore.getSuggestedVideos();
   },[])
 
   const renderTrendingVideos = () =>
