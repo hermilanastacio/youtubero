@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/youtubero/static/css/main.2760bed1.chunk.css",
-    "main.js": "/youtubero/static/js/main.daed4c16.chunk.js",
-    "main.js.map": "/youtubero/static/js/main.daed4c16.chunk.js.map",
+    "main.js": "/youtubero/static/js/main.b285b204.chunk.js",
+    "main.js.map": "/youtubero/static/js/main.b285b204.chunk.js.map",
     "runtime-main.js": "/youtubero/static/js/runtime-main.8052a3a7.js",
     "runtime-main.js.map": "/youtubero/static/js/runtime-main.8052a3a7.js.map",
     "static/js/2.1ced6101.chunk.js": "/youtubero/static/js/2.1ced6101.chunk.js",
     "static/js/2.1ced6101.chunk.js.map": "/youtubero/static/js/2.1ced6101.chunk.js.map",
     "index.html": "/youtubero/index.html",
-    "precache-manifest.973427c13300d941d70c6d16b6d4ac25.js": "/youtubero/precache-manifest.973427c13300d941d70c6d16b6d4ac25.js",
+    "precache-manifest.569c2a9abd047ccd704c5b16fee7e352.js": "/youtubero/precache-manifest.569c2a9abd047ccd704c5b16fee7e352.js",
     "service-worker.js": "/youtubero/service-worker.js",
     "static/css/main.2760bed1.chunk.css.map": "/youtubero/static/css/main.2760bed1.chunk.css.map",
     "static/js/2.1ced6101.chunk.js.LICENSE.txt": "/youtubero/static/js/2.1ced6101.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.8052a3a7.js",
     "static/js/2.1ced6101.chunk.js",
     "static/css/main.2760bed1.chunk.css",
-    "static/js/main.daed4c16.chunk.js"
+    "static/js/main.b285b204.chunk.js"
   ]
 }
