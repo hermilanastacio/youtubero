@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/youtubero/precache-manifest.c00294197b15217200896025a595ba8a.js"
+  "/youtubero/precache-manifest.4283bacce18560a94dfbcd678ae44571.js"
 );
 
 self.addEventListener('message', (event) => {
