@@ -6,7 +6,7 @@ import Callback from './pages/Callback/Callback';
 import App from './App';
 
 ReactDOM.render(
-  <HashRouter>
+  <HashRouter basename={process.env.REACT_PUBLIC_URL}>
     <Route exact path="/">
       <Callback/>
     </Route>
