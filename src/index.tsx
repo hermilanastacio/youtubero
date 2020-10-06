@@ -1,17 +1,18 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import App from './App';
 import './index.scss';
-
-import { CallbackRouteWrapper } from './callback/hoc/withCallbackRoute';
+import { HashRouter, Route } from "react-router-dom";
+import Callback from './pages/Callback/Callback';
+import App from './App';
 
 ReactDOM.render(
-  <React.Fragment>
-    {
-    <CallbackRouteWrapper type='browser'>
+  <HashRouter>
+    <Route exact path="/">
+      <Callback/>
+    </Route>
+    <Route exact path="/dashboard">
       <App/>
-    </CallbackRouteWrapper>
-    }    
-  </React.Fragment>,
+    </Route>
+  </HashRouter>,
   document.getElementById('root')
 );

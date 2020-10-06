@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { AppBar, Toolbar, IconButton, Typography, TextField } from '@material-ui/core';
+import { AppBar, Toolbar, IconButton, TextField } from '@material-ui/core';
 import { ReactComponent as YouTubeLogo } from '../../assets/images/logo.svg';
-import { AuthCodeRequester } from "../../callback/oauth/AuthCodeRequester";
 import { generateAuthUrl, generateUploadVideoUrl } from '../../common/utils';
 import { useStore } from '../../common/stores';
 import styles from './TopNav.module.scss';
@@ -15,18 +14,6 @@ import {
 const TopNav: React.FC = () => {
   const { authStore, modalStore, videoStore, channelStore } = useStore();
 
-  const handleRequestToken = () => {
-    let authUrl = generateAuthUrl();
-
-    let queryStringKey = "code";
-    let authCodeRequester = new AuthCodeRequester(queryStringKey);
-
-    authCodeRequester.getAuthCode(authUrl).then(async(res)=> {
-      let accessToken = await authStore.reqestToken(res);
-      channelStore.getMyChannelDetails(accessToken);
-    });
-  }
-
   const handleSubmitSearch = (e: any) => {
     e.preventDefault();
     //Checks if search keyword is empty or same w/ the previous one
@@ -38,17 +25,11 @@ const TopNav: React.FC = () => {
 
   const validateSignOut = () => {
     let isSure = window.confirm('Are you sure you want to sign out?');
-
+    
     if(isSure) {
       authStore.setAccessToken(""); 
       modalStore.setActiveTab(0);
     }
-  }
-
-  const handleToggleSignIn = () => {
-    !authStore.accessToken 
-      ? handleRequestToken()
-      : validateSignOut();
   }
 
   const handleClickSearch = () => {
@@ -59,13 +40,8 @@ const TopNav: React.FC = () => {
   return (
     <>
       <div className={styles.topLoginWrapper}>
-        <Typography 
-          className={styles.loginText}
-          onClick={handleToggleSignIn} 
-          variant="body2"
-        >
-          {authStore.accessToken ? 'Sign Out' : 'Sign In'}
-        </Typography>
+        {!authStore.accessToken && <a className={styles.loginText} href={generateAuthUrl()}>Sign In</a>}
+        {authStore.accessToken && <span className={styles.loginText} onClick={validateSignOut}>Sign Out</span>}
       </div>
       <AppBar position="static" color="default">
         <Toolbar>
