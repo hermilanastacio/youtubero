@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "db675e2a7bb1f5f96e513fcd1ee45bc3",
+    "revision": "51d6ea6f9184edd12222efaf7ab15910",
     "url": "/youtubero/index.html"
   },
   {
-    "revision": "4981097ac3b894f38dce",
-    "url": "/youtubero/static/css/main.e9a80d36.chunk.css"
+    "revision": "c6932ed7b4e47ab0c1b3",
+    "url": "/youtubero/static/css/main.aa21bc0a.chunk.css"
   },
   {
     "revision": "39eb5417368dcc99164a",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/youtubero/static/js/2.d03ec583.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4981097ac3b894f38dce",
-    "url": "/youtubero/static/js/main.2f09745e.chunk.js"
+    "revision": "c6932ed7b4e47ab0c1b3",
+    "url": "/youtubero/static/js/main.ed503e14.chunk.js"
   },
   {
     "revision": "88edfaff143a376ead85",
