@@ -31,16 +31,18 @@ const RelatedVideos: React.FC = () => {
       >
         {videoStore.relatedVideos && 
           videoStore.relatedVideos.map((video, i) => {
-            return (
-              <VerticalCard 
-                thumbnailUrl={video.snippet.thumbnails.medium.url} 
-                channelTitle={video.snippet.channelTitle} 
-                publishedAt={video.snippet.publishedAt}
-                title={video.snippet.title} 
-                id={video.id.videoId}
-                key={i}
-              />
-            )
+            if(video.snippet) {
+              return (
+                <VerticalCard 
+                  thumbnailUrl={video.snippet.thumbnails.medium.url} 
+                  channelTitle={video.snippet.channelTitle} 
+                  publishedAt={video.snippet.publishedAt}
+                  title={video.snippet.title} 
+                  id={video.id.videoId}
+                  key={i}
+                />
+              )
+            }
           })
         }
       </InfiniteScroll>
